@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Tilt+Neon&family=Tilt+Warp&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todolist</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <span class="card__title">TODOLIST</span>
+        <div id="popup">
+          <div class="popup__plus">+</div>
+        </div> 
+        <div class="select_block">
+          <svg class="shevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M201.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 173.3 54.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" fill="rgba(0, 0, 0, 0.9)" filter="drop-shadow(0.95rem 1.8rem 1.8rem rgba(0, 0, 0, 0.3))"/>
+          </svg>
+          <div class="hide">
+            <select id="select_type">
+            <option value="0" selected>Сортировка по типу</option>
+            <option value="1">Личные задачи</option>
+            <option value="2">Рабочие задачи</option>
+          </select>
+          <select id="all">
+            <option value="3" selected>Все задачи</option>
+            <option value="4">Выполнено</option>
+            <option value="5">Не выполнено</option>
+          </select>
+          <select id="sort">
+            <option value="6" selected>По дате</option>
+            <option value="7">Новые</option>
+            <option value="8">Старые</option>
+          </select>
+        </div>
+        </div>
+
+        <div id="tasks">
+          
+        </div>
+      </div>
+
+          <div class="modalWrapper" onclick="">
+            <div class="modal__body">
+              <div class="modal__content">
+                <div class="modal__close">x</div>
+
+                  <label for="title_task"></label>
+                  <input type="text" placeholder="Новая задача..." id="title_task" />
+                  
+                  <label>
+                    <textarea type="textarea" placeholder="Описание, если нужно..." maxlength="200" id="description__task"></textarea>
+                  </label>
+                  <input id="calendar__task" type="datetime-local" />
+                  
+                  <p class="type__task">Тип задачи</p>
+                  <div class="radiobuttons">
+                    <input class="rad1" type="radio" value="1" id="radio_1" name="radio" checked />
+                    <label for="radio_1">Личная</label>
+                    <input class="rad2" type="radio" value="2" id="radio_2" name="radio" />
+                    <label for="radio_2">Рабочая</label>
+                  </div>
+
+                  <button>Создать</button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
