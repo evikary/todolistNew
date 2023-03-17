@@ -362,3 +362,94 @@ button {
 .red {
   color: tomato;
 }
+
+@media (max-width: 720px) {
+  .card {
+    width: unset;
+  }
+
+  .card__title {
+    font-size: 40px;
+  }
+
+  #popup {
+    margin-top: 20px;
+  }
+
+  .shevron {
+    margin-top: 10px;
+    width: 17px;
+  }
+
+  #select_type {
+    font-size: 16px;
+    display: block;
+  }
+
+  #all {
+    font-size: 16px;
+    display: block;
+  }
+
+  #sort {
+    font-size: 16px;
+    display: block;
+  }
+
+  #tasks {
+    margin-top: 20px;
+  }
+
+  .task_card {
+    align-items: baseline;
+    flex-direction: column-reverse;
+    width: unset;
+  }
+
+  .checkbox {
+    width: unset;
+  }
+
+  .check {
+    margin-right: 3px;
+  }
+
+  .type {
+    font-size: 15px;
+  }
+
+  .task {
+    font-size: 17px;
+  }
+
+  .edit {
+    font-size: 15px;
+  }
+
+  .trash {
+    font-size: 15px;
+  }
+
+  .tag {
+    font-size: 8px;
+    margin-left: unset;
+  }
+
+  .description {
+    font-size: 15px;
+    width: unset;
+  }
+
+  .modal__content {
+    width: 300px;
+    height: 500px;
+  }
+
+  #title_task {
+    width: 200px;
+  }
+
+  #description__task {
+    width: 200px;
+  }
+}
