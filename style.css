@@ -365,7 +365,7 @@ button {
 
 @media (max-width: 720px) {
   .card {
-    width: unset;
+    max-width: 300px;
   }
 
   .card__title {
@@ -403,7 +403,7 @@ button {
   .task_card {
     align-items: baseline;
     flex-direction: column-reverse;
-    width: unset;
+    max-width: 280px;
   }
 
   .checkbox {
@@ -431,13 +431,14 @@ button {
   }
 
   .tag {
-    font-size: 8px;
+    font-size: 10px;
     margin-left: unset;
   }
 
   .description {
     font-size: 15px;
     width: unset;
+    margin-bottom: 10px;
   }
 
   .modal__content {
